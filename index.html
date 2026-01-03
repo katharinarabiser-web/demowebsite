@@ -1,51 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home – Paragliding Workshops</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <meta charset="utf-8">
+  <title>Paragliding Workshops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gleitschirm Workshops, Coaching und Fortbildung">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<header>
-  <div class="container navbar">
-    <a class="brand" href="index.html">Paragliding Workshops</a>
+<body class="home">
 
-    <nav>
-      <a class="active" href="index.html">Home</a>
-      <a href="portrait.html">Portrait</a>
-      <a href="workshops.html">Workshops</a>
-      <a href="travel.html">Travel</a>
-      <a href="tandem.html">Tandem</a>
-      <a href="galerie.html">Galerie</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="logo" aria-hidden="true"></span>
+      <span>Paragliding Workshops</span>
+    </a>
+
+    <!-- Checkbox steuert das Mobile-Menü -->
+    <input type="checkbox" id="menuToggle" aria-label="Menü umschalten">
+
+    <label class="menu-btn" for="menuToggle" aria-label="Menü öffnen/schließen">
+      <span aria-hidden="true"></span>
+    </label>
+
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="termine.html">Termine</a></li>
+        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="ueber.html">Über</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
     </nav>
   </div>
 </header>
 
+
 <main>
-  <div class="container">
-    <section class="hero">
-      <h1>Willkommen bei Paragliding Workshops</h1>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Einfach besser fliegen</h1>
       <p>
-        Hier findest du Informationen zu Workshops, Reisen, Tandemflügen und meiner Arbeit als Gleitschirmpilot.
+        Praxisnahe Gleitschirm-Workshops und individuelles Coaching.<br>
+        Klar. Sicher. Persönlich.
       </p>
-    </section>
-  </div>
+
+      <div class="hero-actions">
+        <a href="termine.html" class="btn primary">Termine ansehen</a>
+        <a href="workshops.html" class="btn">Workshops entdecken</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="wrap">
+      <h2>Was dich erwartet</h2>
+      <p>
+        Fortbildung für ambitionierte Pilot:innen – vom Thermiktraining bis
+        zum Streckenfliegen. Keine Massenabfertigung, sondern durchdachte Inhalte
+        und echtes Feedback.
+      </p>
+    </div>
+  </section>
 </main>
 
-<footer>
-  <div class="container">
-    © <span id="year"></span> Paragliding Workshops
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>© 2026 Paragliding Workshops</p>
+    <p class="muted">
+      <a href="#">Impressum</a> · <a href="#">Datenschutz</a>
+    </p>
   </div>
 </footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
